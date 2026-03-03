@@ -1,5 +1,5 @@
 // test2.js - Test challenge2 with 3 test cases
-const { execSync } = require('child_process');
+import { execSync } from "child_process";
 
 const output = execSync('node challenge2.js').toString().trim();
 const lines = output.split('\n');
@@ -16,7 +16,7 @@ let passedCount = 0;
 testCases.forEach((test, index) => {
   const result = lines[index];
   const passed = result === test.expected;
-  
+
   if (passed) {
     console.log(`✓ Test ${index + 1} passed (n=${test.input}): ${result}`);
     passedCount++;
