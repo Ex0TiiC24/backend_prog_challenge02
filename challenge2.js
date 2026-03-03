@@ -1,11 +1,14 @@
-// Challenge 2: Print OXOXO....n pattern by adding O and X into result variable and return it out
-// result must has a length of n and starts with O
+// challenge2.js - Print O X O X O ... pattern
+// then export the function for testing by using named export
 
 function challenge2(n) {
   let result = '';
-  // write code here
-
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 1) {
+      result += 'O';
+    } else {
+      result += 'X';
+    }
+  }
   return result;
 }
-
-console.log(challenge2(4)); // OXOX

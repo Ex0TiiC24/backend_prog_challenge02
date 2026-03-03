@@ -1,9 +1,35 @@
-// test2.js - Test challenge2 with 3 test cases
-import { execSync } from "child_process";
+// Import the function to test
+// write here
+import ...
 
-const output = execSync('node challenge2.js').toString().trim();
-const lines = output.split('\n');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------
 const testCases = [
   { input: 5, expected: 'OXOXO' },
   { input: 8, expected: 'OXOXOXOX' },
@@ -14,7 +40,7 @@ console.log('Running Challenge 2 Tests:\n');
 
 let passedCount = 0;
 testCases.forEach((test, index) => {
-  const result = lines[index];
+  const result = challenge2(test.input);
   const passed = result === test.expected;
 
   if (passed) {
